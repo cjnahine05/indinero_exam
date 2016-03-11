@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 10px !important;
+}
+
+p {
+  margin: 0 0 0;
+  text-align: center;
+  font-family: "Anonymous Pro", "Inconsolata", "Menlo", "Consolas", "Bitstream Vera Sans Mono", "Courier New", monospace;
+}
+
+.p_stripe{
+  background-color: lightgray;
+}
+
+#board {
+  position: relative;
+  margin: 0 auto;
+  width: 640px;
+  height: 500px;
+}
+
+.actions {
+  margin-top: 6px;
+  text-align: center;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  border: solid 6px rgba(0,0,0,.08);
+  transition: all 75ms;
+
+  &.falling {
+    transition: all 150ms;
+  }
+
+  &.red {
+    background-color: red;
+  }
+
+  &.yellow {
+    background-color: yellow;
+  }
+}
